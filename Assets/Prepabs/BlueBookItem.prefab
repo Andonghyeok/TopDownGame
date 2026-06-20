@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -4836274435925786393}
   - component: {fileID: -7811848585853019604}
   - component: {fileID: 2291610516215610381}
+  - component: {fileID: 4700849002324911547}
   m_Layer: 5
   m_Name: BlueBookItem
   m_TagString: Item
@@ -92,6 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5df2f71410b06b4aac78cb5d50be2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minDropDistance: 2
+  maxDropDistance: 3
 --- !u!225 &2233602126502838494
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -219,3 +222,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8125, y: 0.8125}
   m_EdgeRadius: 0
+--- !u!114 &4700849002324911547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047404496993790802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090c105d2b189bf4f895a0effed03eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

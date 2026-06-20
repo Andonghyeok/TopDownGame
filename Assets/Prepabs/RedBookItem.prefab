@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1528678516623719168}
   - component: {fileID: -8177166718637945621}
   - component: {fileID: 196980268929112131}
+  - component: {fileID: 4593551071661586430}
   m_Layer: 5
   m_Name: RedBookItem
   m_TagString: Item
@@ -104,6 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5df2f71410b06b4aac78cb5d50be2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minDropDistance: 2
+  maxDropDistance: 3
 --- !u!114 &1528678516623719168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,3 +222,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8125, y: 0.8125}
   m_EdgeRadius: 0
+--- !u!114 &4593551071661586430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8741225468440291945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090c105d2b189bf4f895a0effed03eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceHeight: 0.4
+  bounceDuration: 0.3
+  bounceCount: 3

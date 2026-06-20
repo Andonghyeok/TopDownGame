@@ -8,4 +8,11 @@ public class SaveData
     //public string mapBoundary; // 맵의 경계선 이름 ex) T1, T2, F1, F2...
     public List<InventorySaveData> inventorySaveData;
     public List<InventorySaveData> hotbarSaveData;
+    public List<ChestSaveData> chestSaveData;
+}
+[System.Serializable]
+public class ChestSaveData
+{
+    public string chestID;
+    public bool isOpened;
 }
