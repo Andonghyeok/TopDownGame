@@ -4,4 +4,5 @@ public class InventorySaveData
 {
     public int itemId;
     public int slotIndex;
+    public int quantity = 1;
 }

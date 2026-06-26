@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34355d46dbf3a554e97bd5f7c708aeb0, type: 3}
+  m_Name: New NPC Dialogue
+  m_EditorClassIdentifier: 
+  npcName: brownHairGirl
+  npcPortrait: {fileID: 585010498, guid: 082bfdb41df809e418cda0c6c6aaa5c3, type: 3}
+  autoProgressLines: 0100
+  autoProgressDelay: 1.5
+  dialogueLines:
+  - Hello there Young Man!
+  - you seem capable of great things... I may need your help in the future....
+  typingSpeed: 0.05

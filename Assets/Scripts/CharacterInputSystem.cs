@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -26,9 +27,8 @@ public class CharacterInputSystem : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
 
-        if (context.phase == InputActionPhase.Performed)    // InputActionPhase.Started : Å°¸¦´©¸£´Â ¼ø°£¸¸ÀÛµ¿, Performed : Å°°¡ ´­¸°»óÅÂ¿¡¼­µµ °ªÀ» ¹Þ¾Æ¿È
-        {
-            animator.SetBool("isWalking", true);
+        if (context.phase == InputActionPhase.Performed)    // InputActionPhase.Started : Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ûµï¿½, Performed : Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½
+        { 
             curMovementInput = context.ReadValue<Vector2>();
             animator.SetFloat("InputX", curMovementInput.x);
             animator.SetFloat("InputY", curMovementInput.y);
@@ -44,10 +44,16 @@ public class CharacterInputSystem : MonoBehaviour
     }
     public void ApplyMove()
     {
-
+        if(PauseController.IsGamePaused)
+        {
+            rigid.linearVelocity = Vector2.zero;
+            animator.SetBool("isWalking", false);
+            return;
+        }
         if (rigid != null)
         {
             rigid.linearVelocity = curMovementInput * MoveSpeed;
+            animator.SetBool("isWalking", rigid.linearVelocity.magnitude > 0);
         }
 
 
