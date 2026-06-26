@@ -10,13 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34355d46dbf3a554e97bd5f7c708aeb0, type: 3}
-  m_Name: New NPC Dialogue
+  m_Name: YellowHairGirlNPC
   m_EditorClassIdentifier: 
-  npcName: brownHairGirl
-  npcPortrait: {fileID: 585010498, guid: 082bfdb41df809e418cda0c6c6aaa5c3, type: 3}
-  autoProgressLines: 0100
+  npcName: YellowHairGirl
+  npcPortrait: {fileID: -6251682230944352461, guid: 9fc5d6a43aa83eb429f6b99f0b96c44f, type: 3}
+  autoProgressLines: 0101000000
   autoProgressDelay: 1.5
   dialogueLines:
   - Hello there Young Man!
-  - you seem capable of great things... I may need your help in the future....
+  - Can you Help?
+  - Thanks!
+  - I knew you'd help!
+  - Oh...OK...
+  - Maybe next time...
+  endDialogueLines: 000000010001
   typingSpeed: 0.05
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Yes
+    - No
+    nextDialogueIndexes: 0200000004000000

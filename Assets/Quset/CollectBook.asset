@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f3cc0dd72acbc48b751965c930ac3f, type: 3}
+  m_Name: CollectBook
+  m_EditorClassIdentifier: 
+  questID: e59d705a-6ff5-4b81-8449-130d12f00b65
+  questName: Collectbook
+  description: ' we must collect 5 book to Help!'
+  objectives:
+  - objextiveID: 1
+    description: collect 5 book
+    type: 0
+    requiredAmount: 5
+    currentAmount: 0
